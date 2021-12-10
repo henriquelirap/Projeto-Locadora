@@ -112,10 +112,20 @@ public class MovimentacoesCaixa extends javax.swing.JFrame {
             }
         });
         tabelaCaixa.setRowHeight(35);
+        tabelaCaixa.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                tabelaCaixaMouseMoved(evt);
+            }
+        });
         jScrollPane2.setViewportView(tabelaCaixa);
 
         jPanel2.setBackground(new java.awt.Color(153, 153, 153));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jPanel2MouseMoved(evt);
+            }
+        });
 
         jLabel1.setText("Data do Caixa/Movimentações");
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -215,10 +225,10 @@ public class MovimentacoesCaixa extends javax.swing.JFrame {
             }
         });
 
+        removerBtn.setText("Remover Movimentação ");
         removerBtn.setBackground(new java.awt.Color(204, 204, 204));
         removerBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         removerBtn.setForeground(new java.awt.Color(0, 0, 0));
-        removerBtn.setText("Remover Movimentação ");
         removerBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 removerBtnAction(evt);
@@ -438,6 +448,14 @@ public class MovimentacoesCaixa extends javax.swing.JFrame {
             return;
         }
     }//GEN-LAST:event_removerBtnAction
+
+    private void jPanel2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseMoved
+       caixaMov();
+    }//GEN-LAST:event_jPanel2MouseMoved
+
+    private void tabelaCaixaMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabelaCaixaMouseMoved
+       caixaMov();
+    }//GEN-LAST:event_tabelaCaixaMouseMoved
 
     //Método para caixa buscar a data selecionada em tabela;
     private void caixaMov() {

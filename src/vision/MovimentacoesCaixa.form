@@ -128,6 +128,9 @@
                     </Property>
                     <Property name="rowHeight" type="int" value="35"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="tabelaCaixaMouseMoved"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -142,6 +145,9 @@
                   </Border>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="jPanel2MouseMoved"/>
+              </Events>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -454,6 +460,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="removerBtn">
                   <Properties>
+                    <Property name="text" type="java.lang.String" value="Remover Movimenta&#xe7;&#xe3;o "/>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="cc" green="cc" red="cc" type="rgb"/>
                     </Property>
@@ -463,7 +470,6 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="0" green="0" red="0" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Remover Movimenta&#xe7;&#xe3;o "/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removerBtnAction"/>
