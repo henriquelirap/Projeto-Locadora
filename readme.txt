@@ -6,6 +6,7 @@ a ajudar naquilo que estiver ao meu alcance no conhecimento.
 
 ##O projeto consiste em um sistema de locadora de carros, foi desenvolvido pensando em ter usabilidade tanto para o cliente, quanto para funcionário e gerente.
 
+##Melhor visualização do projeto via IDE NetBeans
 ##locadora.sql contém toda a SQL necessária pra deixar o sistema funcional, usei XAMPP e PhpMyAdmin Server para criar as tabelas e manipular dados.
 ##Bibliotecas em JAR também disponiveis e necessárias para o uso.
 
