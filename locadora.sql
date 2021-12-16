@@ -21,6 +21,10 @@ SET time_zone = "+00:00";
 -- Banco de dados: `locadora`
 --
 
+CREATE DATABASE IF NOT EXISTS `locadora` 
+DEFAULT CHARSET=utf8mb4;
+USE `locadora`;
+
 -- --------------------------------------------------------
 
 --
